@@ -1,4 +1,4 @@
-User agent: *
-Allow /
+User-agent: *
+Allow: /
 
-Sitemap https://seogantenk.netlify.app/sitemap.xml
+Sitemap: https://seogantenk.netlify.app/sitemap.xml
