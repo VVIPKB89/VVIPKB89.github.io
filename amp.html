@@ -13,27 +13,18 @@
 <!-- AMP CORE -->
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 
+<!-- ✅ FIX: BOILERPLATE (WAJIB 1x DOANG) -->
 <style amp-boilerplate>
 body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
 -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
 -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
 animation:-amp-start 8s steps(1,end) 0s 1 normal both}
-@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
 @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
 </style>
 
 <noscript>
 <style amp-boilerplate>
 body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
-</style>
-</noscript>
-</style>
-<noscript>
-<style amp-boilerplate>
-<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </style>
 </noscript>
 
@@ -56,6 +47,7 @@ h1 { color:#ffd700; font-size:26px; }
 h2 { color:#ffd700; margin-top:30px; }
 p { font-size:16px; line-height:1.6; }
 
+/* 🔥 HIGH CTR BUTTON */
 .btn {
   display:inline-block;
   margin-top:20px;
@@ -65,14 +57,37 @@ p { font-size:16px; line-height:1.6; }
   text-decoration:none;
   border-radius:8px;
   font-weight:bold;
+  animation: pulse 1.2s infinite;
 }
 
-.img-box {
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow:0 0 5px red; }
+  50% { transform: scale(1.08); box-shadow:0 0 20px orange; }
+  100% { transform: scale(1); box-shadow:0 0 5px red; }
+}
+
+/* 🔥 FULL CLICKABLE BANNER */
+.banner {
+  position:relative;
   margin:30px 0;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 0 20px red;
+}
+
+.banner-text {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background:rgba(0,0,0,0.6);
+  color:#ffd700;
+  font-weight:bold;
+  padding:10px;
+  font-size:18px;
 }
 </style>
 
-<!-- 🔥 SCHEMA ARTICLE -->
+<!-- SCHEMA -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -92,51 +107,6 @@ p { font-size:16px; line-height:1.6; }
 }
 </script>
 
-<!-- 🔥 SCHEMA FAQ -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
-   {
-     "@type": "Question",
-     "name": "Apa itu platform online?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Platform online adalah layanan digital yang dapat diakses melalui internet untuk berbagai kebutuhan."
-     }
-   },
-   {
-     "@type": "Question",
-     "name": "Bagaimana memilih platform yang aman?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Pilih platform dengan sistem stabil, reputasi baik, dan proses yang jelas."
-     }
-   }
- ]
-}
-</script>
-
-<!-- 🔥 SCHEMA BREADCRUMB -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "BreadcrumbList",
- "itemListElement": [{
-   "@type": "ListItem",
-   "position": 1,
-   "name": "Home",
-   "item": "https://seogantenk.netlify.app/"
- },{
-   "@type": "ListItem",
-   "position": 2,
-   "name": "Panduan Platform",
-   "item": "https://seogantenk.netlify.app/amp.html"
- }]
-}
-</script>
-
 </head>
 
 <body>
@@ -152,16 +122,15 @@ p { font-size:16px; line-height:1.6; }
 
   <h1>Panduan Memilih Platform Online Aman di 2026</h1>
 
-  <p>Memilih platform online yang tepat sangat penting untuk memastikan pengalaman yang aman, cepat, dan nyaman. Tidak semua platform memiliki kualitas yang sama, поэтому penting memahami ciri-ciri yang terpercaya.</p>
+  <p>Memilih platform online yang tepat sangat penting untuk memastikan pengalaman yang aman, cepat, dan nyaman.</p>
 
-  <!-- CTA -->
+  <!-- 🔥 CTA -->
   <a href="https://seogantenk.netlify.app/" class="btn">
     GABUNG SEKARANG
   </a>
 
-  <!-- IMAGE -->
-<div class="img-box">
-  <a href="https://seogantenk.netlify.app/">
+  <!-- 🔥 FULL CLICKABLE BANNER -->
+  <a href="https://seogantenk.netlify.app/" class="banner">
     <amp-img 
       src="https://i.imgur.com/Y7WkhVr.png"
       width="800"
@@ -169,23 +138,19 @@ p { font-size:16px; line-height:1.6; }
       layout="responsive"
       alt="Gabung Sekarang">
     </amp-img>
+
+    <div class="banner-text">
+      🔥 KLIK DISINI & MULAI SEKARANG 🔥
+    </div>
   </a>
-</div>
 
   <h2>Ciri Platform yang Aman</h2>
-  <p>Platform yang baik memiliki sistem stabil, proses cepat, serta dukungan layanan yang responsif. Hal ini penting untuk kenyamanan pengguna.</p>
+  <p>Platform yang baik memiliki sistem stabil, proses cepat, serta dukungan layanan yang responsif.</p>
 
   <h2>Tips Memilih Platform</h2>
   <p>✔ Pastikan sistem stabil</p>
   <p>✔ Pilih layanan dengan reputasi baik</p>
   <p>✔ Hindari klaim berlebihan</p>
-
-  <h2>Contoh Platform Modern</h2>
-  <p>Salah satu platform yang dikenal adalah Koboi89 dengan sistem yang responsif dan mudah diakses.</p>
-
-  <h2>FAQ</h2>
-  <p><strong>Apa itu platform online?</strong><br>Layanan digital berbasis internet.</p>
-  <p><strong>Apakah semua platform aman?</strong><br>Tidak, pilih yang terpercaya.</p>
 
 </div>
 
