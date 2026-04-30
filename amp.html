@@ -49,59 +49,109 @@ body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:non
 
 <style amp-custom>
 body {
-  background:#000;
+  background: radial-gradient(circle at top, #111, #000);
   color:#ddd;
-  font-family:Arial;
+  font-family: 'Segoe UI', Arial, sans-serif;
   text-align:center;
 }
+
 .container {
   max-width:900px;
   margin:auto;
   padding:20px;
 }
-h1 { color:#ffd700; font-size:26px; }
-h2 { color:#ffd700; margin-top:30px; }
-p { font-size:16px; line-height:1.6; }
 
-/* 🔥 FIX LINK (NO BIRU + NO GARIS) */
+/* TYPO */
+h1 {
+  color:#ffd700;
+  font-size:28px;
+  text-shadow:0 0 10px rgba(255,215,0,0.6);
+}
+
+h2 {
+  color:#ffd700;
+  margin-top:30px;
+  text-shadow:0 0 6px rgba(255,215,0,0.4);
+}
+
+p {
+  font-size:16px;
+  line-height:1.7;
+  color:#ccc;
+}
+
+/* LINK CLEAN */
 a {
   color:#ffd700;
   text-decoration:none;
+  transition:0.3s;
 }
 
 a:hover {
-  color:orange;
+  color:#fff;
+  text-shadow:0 0 10px gold;
 }
 
-/* BUTTON */
+/* 🔥 BUTTON PREMIUM */
 .btn {
   display:inline-block;
-  margin-top:20px;
-  padding:14px 28px;
-  background:linear-gradient(45deg, red, orange);
+  margin-top:25px;
+  padding:14px 32px;
+  background:linear-gradient(45deg, #ff0000, #ff9900);
   color:#000 !important;
-  text-decoration:none !important;
-  border-radius:8px;
+  border-radius:50px;
   font-weight:bold;
+  letter-spacing:1px;
+  box-shadow:0 0 15px rgba(255,0,0,0.6);
+  transition: all 0.3s ease;
 }
 
+.btn:hover {
+  transform:scale(1.08);
+  box-shadow:0 0 25px rgba(255,140,0,0.9);
+}
+
+/* 🔥 CARD STYLE */
+.card {
+  background:rgba(255,255,255,0.03);
+  border-radius:16px;
+  padding:20px;
+  margin-top:20px;
+  box-shadow:0 0 15px rgba(255,255,255,0.05);
+  backdrop-filter: blur(6px);
+}
+
+/* 🔥 BANNER PREMIUM */
 .banner {
   position:relative;
   margin:30px 0;
-  border-radius:12px;
+  border-radius:16px;
   overflow:hidden;
-  box-shadow:0 0 20px red;
   display:block;
+  box-shadow:0 0 25px rgba(255,0,0,0.6);
+  transition:0.3s;
 }
+
+.banner:hover {
+  transform:scale(1.02);
+  box-shadow:0 0 40px rgba(255,140,0,0.8);
+}
+
 .banner-text {
   position:absolute;
   bottom:0;
   width:100%;
-  background:rgba(0,0,0,0.6);
+  background:linear-gradient(to top, rgba(0,0,0,0.9), transparent);
   color:#ffd700;
   font-weight:bold;
-  padding:10px;
+  padding:15px;
   font-size:18px;
+  text-shadow:0 0 8px gold;
+}
+
+/* IMAGE */
+amp-img {
+  border-radius:12px;
 }
 </style>
 
