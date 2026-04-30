@@ -47,7 +47,6 @@ body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:non
 </style>
 </noscript>
 
-<!-- STYLE -->
 <style amp-custom>
 body {
   background:#000;
@@ -64,13 +63,24 @@ h1 { color:#ffd700; font-size:26px; }
 h2 { color:#ffd700; margin-top:30px; }
 p { font-size:16px; line-height:1.6; }
 
+/* 🔥 FIX LINK (NO BIRU + NO GARIS) */
+a {
+  color:#ffd700;
+  text-decoration:none;
+}
+
+a:hover {
+  color:orange;
+}
+
+/* BUTTON */
 .btn {
   display:inline-block;
   margin-top:20px;
   padding:14px 28px;
   background:linear-gradient(45deg, red, orange);
-  color:#000;
-  text-decoration:none;
+  color:#000 !important;
+  text-decoration:none !important;
   border-radius:8px;
   font-weight:bold;
 }
@@ -81,6 +91,7 @@ p { font-size:16px; line-height:1.6; }
   border-radius:12px;
   overflow:hidden;
   box-shadow:0 0 20px red;
+  display:block;
 }
 .banner-text {
   position:absolute;
@@ -152,8 +163,9 @@ p { font-size:16px; line-height:1.6; }
 <div class="container">
 
 <!-- GAMBAR -->
+<div class="banner">
+<a href="https://koboiterbaik.com/daftar?ref=Ofckb89" class="banner">
 <amp-img 
-<a href="https://koboiterbaik.com/daftar?ref=Ofckb89"
 src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2R6Yjl5MGVseGJpY3dwa2xpbGZsN211cGRrejh0Y2JnZTgxdmJzbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TeidjOxusb7OhP6JbK/giphy.gif"
 width="400" height="200"
 layout="responsive"
