@@ -1,4 +1,22 @@
 User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+
+# Block parameter (hindari duplicate & tracking)
+Disallow: /*?s=
+Disallow: /*?utm=
+Disallow: /*?ref=
+Disallow: /*?replytocom=
+Disallow: /*?filter=
+
+# Block halaman tidak relevan (kalau ada)
+Disallow: /cgi-bin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /my-account/
+
+# Allow halaman penting
 Allow: /
+Allow: /amp.html
 
 Sitemap: https://seogantenk.netlify.app/sitemap.xml
