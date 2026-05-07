@@ -17,11 +17,12 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
 
-    <!-- GAMBAR DI DALAM AMP -->
+    <!-- GAMBAR -->
     <image:image>
-      <image:loc>https://i.imgur.com/IRwEcbu_d.jpeg?maxwidth=520&shape=thumb&fidelity=high</image:loc>
-      <image:title>Koboi89 Platform Online Modern</image:title>
+      <image:loc>https://i.imgur.com/IRwEcbu.jpeg</image:loc>
+      <image:title>KOBOI89 Platform Online Modern</image:title>
     </image:image>
+
   </url>
 
 </urlset>
